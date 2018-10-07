@@ -4006,7 +4006,7 @@ $_authorizations_map"
     fi
     if [ "$vtype" = "$VTYPE_HTTP" ]; then
       bash upwp
-      _sleep 60
+      _sleep 16
     fi
     if ! __trigger_validation "$uri" "$keyauthorization"; then
       _err "$d:Can not get challenge: $response"
